@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c74d510461.js" crossorigin="anonymous"></script>
+
+    <title>Buttons and Icons</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="grey-text text-darken-2">Button and Icons</h1>
+        <a href="https://leilatelles.com/" target="_blank" class="btn red darken-4">View Site</a>
+        <a href="https://leilatelles.com/" target="_blank" class="btn blue darken-4">View Site</a>
+
+        <br><br>
+        <!-- Waves Effect -->
+        <button class="btn teal darken-4 waves-effect waves-light">View Site</button>
+        <a href="https://leilatelles.com/" target="_blank" class="btn indigo darken-4 waves-effect waves-light blue">View Site</a>
+
+        <br><br>
+        <a href="https://leilatelles.com/" target="_blank" class="btn white waves-effect waves-purple purple-text">View Site</a>
+        <a href="https://leilatelles.com/" target="_blank" class="btn grey darken-4 waves-effect waves-yellow lighten-3">View Site</a>
+
+        <br><br>
+        <!-- Flat Button -->
+        <a href="https://leilatelles.com/" target="_blank" class="waves-effect waves-teal btn-flat">View Site</a>
+
+        <!-- Submit Button -->
+        <button class="btn orange darken-4 waves-effect waves-grey lighten-1" type="submit" name="action">submit<i class="material-icons right">arrow_forward</i></button>
+
+        <br><br>
+        <!-- Large Button -->
+        <a class="waves-effect waves-light btn-large blue-grey darken-3"><i class="material-icons right">local_hospital</i>hospital</a>
+       
+
+        <br><br>
+        <!-- Floting Action Button -->
+        <a class="btn-floating btn-medium brown darken-4 waves-effect waves-light brown"><i class="material-icons">add</i></a>
+        <!-- Pulse Effects -->
+        <a class="btn-floating btn-medium yellow darken-4 pulse"><i class="material-icons">edit</i></a>
+        <!-- Raised Button -->
+        <a class="waves-effect waves-light btn purple"><i class="material-icons right">code</i>html</a>
+
+        <br><br>
+        <!-- Disabled Button -->
+        <a class="btn-large disabled"><i class="material-icons right">shopping_cart</i>Buy Now</a>
+    
+        <br></br>
+        <!-- Material Icons -->
+        <i class="material-icons red-text">shopping_cart</i>
+        <i class="material-icons yellow-text">chat</i>
+        <i class="material-icons blue-text">cloud</i>
+        <i class="material-icons black-text">delete</i>
+       
+        <br><br>
+        <!-- Icon Sizes -->
+        <i class="material-icons purple-text large">email</i>
+        <i class="material-icons orange-text medium">mouse</i>
+        <i class="material-icons indigo-text small">photo_camera</i>
+        <i class="material-icons green-text tiny">sd_card</i>
+
+        <!-- Social Media Icons -->
+        <br><br>
+        <a href="https://www.facebook.com/" target=_blank class="btn blue darken-4 waves-effect waves-light"><i class="fab fa-facebook-square right"></i>Facebook</a>
+        <a href="https://www.instagram.com/" target=_blank class="btn orange darken-4 waves-effect waves-light"><i class="fab fa-instagram-square right"></i>Instagram</a>
+        <a href="https://twitter.com/" target=_blank class="btn blue lighten-2 waves-effect waves-light"><i class="fab fa-twitter right"></i>Twitter</a>
+
+        <br><br>
+        <a href="https://www.facebook.com/" target=_blank><i class="fab fa-facebook-square  pink-text accent-2" style="font-size: 100px;"></i></a>
+        <a href="https://www.instagram.com/" target=_blank><i class="fab fa-instagram-square green-text accent-4" style="font-size: 75px;"></i></a>
+        <a href="https://twitter.com/" target=_blank><i class="fab fa-twitter cyan-text darken-1" style="font-size: 50px;"></i></a>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large amber">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating pink"><i class="material-icons">archive</i></a></li>
+          <li><a class="btn-floating purple darken-3"><i class="material-icons">camera</i></a></li>
+          <li><a class="btn-floating lime-green"><i class="material-icons">directions</i></a></li>
+          <li><a class="btn-floating grey darken-4"><i class="material-icons">error</i></a></li>
+        </ul>
+      </div>
+
+    <div style="height: 100px;"></div>
+    
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    
+    <script>
+        $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+    </script>
+</body>
+</html>

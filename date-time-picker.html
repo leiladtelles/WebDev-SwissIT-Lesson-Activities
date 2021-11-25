@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c74d510461.js" crossorigin="anonymous"></script>
+    <style>
+        .datepicker-date-display{
+            background: #40c4ff !important;
+        }
+        .datepicker-cancel{
+            color: #40c4ff;
+        }
+        .datepicker-done{
+            color: #40c4ff;
+        }
+        .datepicker-table td.is-selected{
+            background: #40c4ff !important;
+        }
+        .timepicker-digital-display{
+            background: #40c4ff !important;
+        }
+        .timepicker-close{
+            color: #40c4ff;
+        }
+        .timepicker-canvas-bearing{
+            fill: #40c4ff !important;
+        }
+        .timepicker-canvas line{
+            stroke: #40c4ff !important;
+        }
+        .timepicker-canvas-bg{
+            fill: #40c4ff !important;
+        }
+        .clockpicker-tick :hover{
+            background: #40c4ff !important;
+        }   
+    </style>
+    <title>Date and Time Picker</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="blue-text">Date and Time Picker</h1>
+        <form>
+            <div class="input-field">
+                <input type="text" class="datepicker">
+                <label for="date">Date</label>
+            </div>
+            <div class="input-field">
+                <input type="text" class="timepicker">
+                <label for="time">Time</label>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    
+
+    <script>
+        $(document).ready(function(){
+            // Date Init
+            $('.datepicker').datepicker();
+            // Time Init
+            $('.timepicker').timepicker();
+        
+        });
+    </script>
+</body>
+</html>

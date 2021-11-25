@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c74d510461.js" crossorigin="anonymous"></script>
+    <title>Scrollspy</title>
+
+    <style>
+        .table-of-contents a.active{
+            border-left: 2px solid #0d47a1;
+            color: #b71c1c;
+        }
+
+        .table-of-contents a:hover{
+            border-left: 2px solid #000000;
+            color: #2962ff;
+        }
+        .p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body class="blue lighten-4">
+    <div class="container">
+        <h2>The Most Exotic Animals in the World</h2>
+        <!-- Scrollspy -->
+        <div class="row">
+            <div class="col s12 m9 l10">
+                <div id="mandarin" class="sectiion scrollspy">
+                    <h5>Mandarin Duck</h5>
+                    <p>Hailing from China, Japan and Russia and introduced in Europe, the mandarin duck is a race appreciated by its enormous beauty. The male possesses a variety of incredible colors like green, fuchsia, blue, brown, cream and orange. Because of its color, they have become one of the most exotic animals in the world.
+                    <br><br>
+                    They usually inhabit areas close to lakes, ponds or lagoons. They are considered carriers of good fortune throughout Asia, as well as affection and conjugal love. In important weddings they are sometimes offered as the main gift.</p>
+                    <img src="images/mandarin-duck.jpg" alt="Mandarin Duck">
+                </div>
+                <div id="tapir" class="sectiion scrollspy">
+                    <h5>Tapir</h5>
+                    <p>The tapir is a large herbivorous mammal inhabiting wooded areas of South America, Central America and Southeast Asia. It has one of the oldest families spanning about 55 million years. They have a very versatile trunk and are docile and calm animals. They are in danger of extinction, especially in Mexico, due to indiscriminate hunting, their low reproductive potential and the destruction of their habitat.</p>
+                    <img src="images/tapir.jpg" alt="Tapir">
+                </div>
+                <div id="pink" class="sectiion scrollspy">
+                    <h5>Pink Grasshopper</h5>
+                    <p>It is common to see green, brown and even white grasshoppers. However, the pink grasshopper is of this color because of a recessive gene that they develop, unlike other grasshoppers. Although there is an isolated case of every 50,000, it is believed that the survival of this type of grasshopper is due to their color. This is mainly because they are no longer attractive to the eyes of predators.</p>
+                    <img src="images/pink-grasshopper.jpg" alt="">
+                </div>
+                <div id="leafy" class="sectiion scrollspy">
+                    <h5>Leafy Seadragon</h5>
+                    <p>The leafy sea dragon, is a beautiful marine fish of the same family as the seahorse. Originally from Australia, they have long leaf-shaped extensions that are distributed throughout their body, which helps them camouflage themselves. This is one of the most desired exotic animals in the world.
+                    <br><br>
+                    They look like floating algae and because of their physical characteristics, they are the object of various threats. They are trapped by collectors and even used in alternative medicine. Their current status is of minor concern, yet they are protected by the Australian government.
+                    <br><br>   
+                    Getting sea dragons for your aquarium is a difficult and expensive process as distributing them requires special licenses to ensure the proper origin or permits. Still, captive support is very difficult and most individuals die.</p>
+                    <img src="images/leafy-seadragon.jpg" alt="">
+                </div>
+                <div id="pinkdolphin" class="sectiion scrollspy">
+                    <h5>Pink Dolphin</h5>
+                    <p>The pink dolphin lives in the tributaries of the Amazon and the Orinoco basin. They feed on fish, river turtles and crabs. The total population volume is unknown and is therefore included in the IUCN Red List. They are kept in captivity in some aquariums of the world, however, they are difficult to train which causes them high mortality to live in non-wild state. The pink dolphin is considered a true exotic animal because of its incredible character and color.</p>
+                    <img src="images/pink-dolphin.jpg" alt="">
+                </div>
+            </div>
+            <div class="col s12 m3 l2 hide-on-small-only">
+                <ul class="section table-of-contents pinned">
+                    <li><a href="#mandarin">Mandarin Duck</a></li>
+                    <li><a href="#tapir">Tapir</a></li>
+                    <li><a href="#pink">Pink Grasshopper</a></li>
+                    <li><a href="#leafy">Leafy Seadragon</a></li>
+                    <li><a href="#pinkdolphin">Pink Dolphin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <div style="height: 100px;"></div>
+    
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+
+</body>
+</html>
